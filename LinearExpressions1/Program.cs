@@ -1,2 +1,21 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("Input double a");
+double a = double.Parse(Console.ReadLine());
+Console.WriteLine("Input double b");
+double b = double.Parse(Console.ReadLine());
+Console.WriteLine("Input double c");
+double c = double.Parse(Console.ReadLine());
+Console.WriteLine("Input double d");
+double d = double.Parse(Console.ReadLine());
+double x, y, z, r;
+x = (a + 2 * b - c + d) / (c * d) + (a + b) / (c - d) - Math.Pow(a, 2) / Math.Pow(b, 2);
+Console.WriteLine("x = ");
+Console.WriteLine(x);
+y = (5 * (a + b) * (c - d)) / (1.0 / 2 * c) + Math.Pow(d, 2) * (Math.Pow(a, 2) - Math.Pow(b, 2)) / (b - a);
+Console.WriteLine("y = ");
+Console.WriteLine(y);
+z = ((Math.Pow(Math.Pow(x, 2) - 2 * x, 3) - 4 * (Math.Pow(x, 4) + 1)) * (1 - b)) / (5 * a + 3 * b);
+Console.WriteLine("z = ");
+Console.WriteLine(z);
+r = (1.0 / 2 * a + 3 / 4.0 * b - 7.0 / 5) / (3 * c + 1) + 1 / (a - c);
+Console.WriteLine("r = ");
+Console.WriteLine(r);
